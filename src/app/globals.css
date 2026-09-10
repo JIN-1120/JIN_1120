@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #241c14;
+  --paper: #fff6e6;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.font-display {
+  font-family: var(--font-dela-gothic), sans-serif;
+}
+
+.font-hand {
+  font-family: var(--font-klee), sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-noto-sans-tc), sans-serif;
+}
+
+/* Manga screentone dot patterns */
+.halftone {
+  background-image: radial-gradient(circle, rgba(36, 28, 20, 0.5) 1.4px, transparent 1.4px);
+  background-size: 9px 9px;
+}
+
+.halftone-lg {
+  background-image: radial-gradient(circle, rgba(36, 28, 20, 0.16) 2px, transparent 2px);
+  background-size: 16px 16px;
+}
+
+.halftone-inv {
+  background-image: radial-gradient(circle, rgba(255, 246, 230, 0.5) 1.6px, transparent 1.6px);
+  background-size: 10px 10px;
+}
+
+/* Radiating impact burst behind hero title */
+.speed-burst {
+  background-image: repeating-conic-gradient(
+    from 0deg,
+    rgba(36, 28, 20, 0.07) 0deg 3deg,
+    transparent 3deg 11deg
+  );
+}
+
+/* Comic ink outline + flat drop-shadow poster text */
+.comic-text {
+  color: #fff6e6;
+  -webkit-text-stroke: 3px #241c14;
+  paint-order: stroke fill;
+  text-shadow: 6px 6px 0 #ff4d6d;
+}
+
+@media (min-width: 640px) {
+  .comic-text {
+    -webkit-text-stroke-width: 4px;
+    text-shadow: 9px 9px 0 #ff4d6d;
+  }
+}
+
+/* Speech bubble with tail */
+.speech-bubble {
+  position: relative;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  left: 34px;
+  bottom: -14px;
+  width: 22px;
+  height: 22px;
+  background: inherit;
+  border-right: 3px solid #241c14;
+  border-bottom: 3px solid #241c14;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(2deg);
+  }
+}
+
+.animate-float {
+  animation: float-y 4.5s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 7s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.6) rotate(-8deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
