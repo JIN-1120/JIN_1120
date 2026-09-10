@@ -71,14 +71,14 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:gap-14 sm:px-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:py-24">
           <div className="relative order-2 lg:order-1">
             <span className="font-display -rotate-2 inline-block rounded-full border-[3px] border-[#241c14] bg-[#ffd23f] px-4 py-1.5 text-xs tracking-widest text-[#241c14] shadow-[3px_3px_0_0_#241c14]">
-              嗨，我是扯鈴表演者
+              JIN
             </span>
 
             <h1 className="comic-text font-display mt-6 text-6xl leading-[0.95] sm:text-7xl">李榮晉</h1>
             <p className="font-hand mt-3 text-xl text-[#ff4d6d] sm:text-2xl">DIABOLO PERFORMER</p>
 
             <p className="mt-6 max-w-md text-base leading-loose text-[#241c14]/80 sm:text-lg">
-              一條繩、兩支棍、一顆鈴，是我表達自己的方式。從練習場到街頭、從校園到劇場舞台，我用扯鈴轉出屬於自己的節奏與故事，也想把這份熱情分享給每一位觀眾。
+              從練習場到街頭、從校園到劇場舞台，我用扯鈴轉出屬於自己的節奏與故事，也想把這份熱情分享給每一位觀眾。
             </p>
 
             <div className="mt-9 flex flex-wrap gap-4">
@@ -97,7 +97,9 @@ export default function Home() {
             </div>
 
             <div className="speech-bubble font-hand mt-10 max-w-xs rounded-2xl border-[3px] border-[#241c14] bg-[#fff6e6] px-5 py-3.5 text-sm text-[#241c14] shadow-[4px_4px_0_0_#241c14]">
-              「咻——這次換我轉給你看！」
+              「每一次演出都是一次存檔！」
+          
+
             </div>
           </div>
 
@@ -175,7 +177,8 @@ export default function Home() {
             <Reveal delay={80} className="rounded-3xl border-[3px] border-[#241c14] bg-[#fff6e6] p-7 shadow-[5px_5px_0_0_#241c14] sm:p-9">
               <p className="font-hand text-lg text-[#ff4d6d] sm:text-xl">大家好，我是李榮晉。</p>
               <p className="mt-4 text-base leading-loose text-[#241c14]/85 sm:text-lg">
-                從第一次讓扯鈴穩穩轉在繩上開始，我就迷上了那種一秒失手、一秒又找回節奏的刺激感。這幾年我利用課餘與假日時間反覆練習，從街頭空地到正式舞台，一次次把動作練得更穩、更有自己的風格。
+               扯鈴表演
+               
               </p>
               <p className="mt-5 text-base leading-loose text-[#241c14]/85 sm:text-lg">
                 對我來說，扯鈴不只是技巧的堆疊，更是一種和自己對話、和觀眾互動的方式。我也喜歡研究這項技藝背後的歷史脈絡，希望能把傳統與當代表演美學一起分享給更多人。
